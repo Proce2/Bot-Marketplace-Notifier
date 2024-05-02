@@ -7,10 +7,10 @@ const cron = require('node-cron');
 const tasks = require('./src/services/tasks')
 require('./src/services/axies');
 
+//cors configuration
 const corsOptions = {
   origin: "http://localhost:8081"
 };
-
 
 // ---- cron ------
 tasks.run(cron);

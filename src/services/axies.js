@@ -85,21 +85,14 @@ const getList = async () => {
                 auction: {
                     ...item.auction
                 }
-                
             }));
-            
         }
-      
         return [];
     } catch (error) {
     
         return []
     }
 };
-
-
-
-
 
 // maxUSD
 const filterUSD = (list, notifiedList) => {
@@ -118,8 +111,6 @@ const filterETH = (list, notifiedList) => {
     })
     return result;
 };
-
-
 
 module.exports = {  getList, filterUSD, filterETH, convertWeiToEth };
 

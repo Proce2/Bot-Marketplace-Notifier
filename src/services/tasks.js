@@ -1,4 +1,3 @@
-
 const { getList, filterUSD, filterETH } = require('./axies');
 const open = require('open');
 //const player = require('play-sound')();
@@ -22,7 +21,6 @@ const run = (cron) => {
   // });
   // ***********************************************************
 
-  // Leer 
   cron.schedule('* * * * * *', async () => {
     try {
       //console.log(`Looking for axie`);
@@ -50,6 +48,7 @@ const run = (cron) => {
       console.log(error);
     }
   });
+  
   // Notificar
   // cron.schedule('*/10 * * * * *', async () => {
   //   try {
