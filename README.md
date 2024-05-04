@@ -56,5 +56,5 @@ If you want to track different Axies or change what kinds of listings you are lo
 ### Note
 This app works internally and does not offer a way to interact with it over the internet through HTTP requests. All settings and interactions are done directly on the server.
 
----
+
 
