@@ -4,25 +4,25 @@ This is a Node.js application designed to monitor and notify changes in the Axie
 ## How to Install
 
 ### Before You Start
-Make sure you have Node.js and npm installed on your computer. You can check if you have them and see which versions you have by typing these commands in your terminal:
-```bash
-node --version
-npm --version
-```
+1. Check the versions of Node.js and npm installed. You can verify this by running the following commands in your terminal:
 
-### Set Up the Project
-Here’s how you get the application ready on your computer:
-1. **Get the code**:
-   - Copy the code from the online repository:
-     ```bash
-     git clone [Repository URL]
-     cd [Repository Name]
-     ```
-2. **Install needed parts**:
-   - Set up all the necessary parts of the project:
-     ```bash
-     npm install
-     ```
+    ```bash
+    node --version
+    npm --version
+    ```
+
+1. **Clone the repository**:
+
+    ```bash
+    git clone [Repository URL]
+    cd [Repository Name]
+    ```
+  
+2. **Install dependencies**:
+
+    ```bash
+    npm install
+    ```
 
 ## How to Use
 
@@ -35,8 +35,11 @@ This command kicks off the server on port 8080 and starts tasks that check the A
 
 ### Change What You Track
 If you want to track different Axies or change what kinds of listings you are looking for, you can do this:
-1. **Find where to make changes**: Open the `axies.js` file that contains the settings for fetching data.
-2. **Change the settings**: Look for the `axios.post` request and change the `"criteria"` part to what you want. For example:
+1.  Open the `axies.js` file that contains the settings for fetching data.
+
+2. Look for the `axios.post` request and change the `"criteria"` part to what you want. For 
+example:
+
     ```javascript
     "criteria": {
       "classes": "Aquatic",  // Change this to any class you are interested in
@@ -44,17 +47,9 @@ If you want to track different Axies or change what kinds of listings you are lo
       "price": {"max": 300}  // Set your price limit
     }
     ```
-3. **Check your changes**: Restart the server to see if it now tracks Axies based on your new settings.
-4. **Keep notes on changes**: Make sure to update any comments or notes in the code to reflect what you changed. This helps you or others understand what was done.
+3. Restart the server to see if it now tracks Axies based on your new settings.
 
 ## What It Does
 - **Checks for new listings**: The application uses scheduled tasks to look for new or changed listings that meet your criteria.
 - **Sends notifications**: It lets you know when there are updates or new listings that match your settings.
-
----
-
-### Note
-This app works internally and does not offer a way to interact with it over the internet through HTTP requests. All settings and interactions are done directly on the server.
-
-
 
