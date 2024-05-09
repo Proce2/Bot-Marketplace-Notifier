@@ -1,6 +1,10 @@
 # Axie Marketplace Notifier
 This is a Node.js application designed to monitor and notify changes in the Axie Infinity marketplace. It automatically checks for new or updated listings of Axies at set times.
 
+## What It Does
+- **Checks for new listings**: The application uses scheduled tasks to look for new or changed listings that meet your criteria.
+- **Sends notifications**: It lets you know when there are updates or new listings that match your settings.
+
 ## How to Install
 
 ### Before You Start
@@ -11,14 +15,8 @@ This is a Node.js application designed to monitor and notify changes in the Axie
     npm --version
     ```
 
-1. **Clone the repository**:
-
-    ```bash
-    git clone [Repository URL]
-    cd [Repository Name]
-    ```
-  
-2. **Install dependencies**:
+1. Clone the repository
+2. Install dependencies:
 
     ```bash
     npm install
@@ -48,8 +46,4 @@ example:
     }
     ```
 3. Restart the server to see if it now tracks Axies based on your new settings.
-
-## What It Does
-- **Checks for new listings**: The application uses scheduled tasks to look for new or changed listings that meet your criteria.
-- **Sends notifications**: It lets you know when there are updates or new listings that match your settings.
 
